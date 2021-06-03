@@ -22,7 +22,7 @@ router.post("/event", (req, res) => {
 
   for (const [domain, eventsList] of Object.entries(domainsToEvents)) {
     if (eventsList.includes(eventType)) {
-      // pretend to ssend request
+      // pretend to send request
       console.log("Sending event to registered domain: ", domain);
     }
   }
